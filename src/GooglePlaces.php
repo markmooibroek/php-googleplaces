@@ -19,7 +19,7 @@ class GooglePlaces
 	public $rankby    = 'prominence';
 	public $sensor    = false;
 	public $types     = null;
-	public $reference = null;
+	public $place_id = null;
 	public $opennow   = null;
 
 	public $subradius = null;
@@ -184,9 +184,9 @@ class GooglePlaces
 					break;
 
 				case 'details':
-					if (!isset($parameters['reference']))
+					if (!isset($parameters['place_id']))
 					{
-						throw new \Exception('You must specify a reference before calling details().');
+						throw new \Exception('You must specify a place_id before calling details().');
 					}
 
 					if (isset($parameters['rankby']))
