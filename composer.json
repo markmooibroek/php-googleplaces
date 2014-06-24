@@ -1,5 +1,5 @@
 {
-	"name":        "joshtronic/php-loremipsum",
+	"name":        "markmooibroek/php-googleplaces",
 	"description": "PHP Wrapper for the Google Places API",
 	"license":     "MIT",
 	"authors": [{
